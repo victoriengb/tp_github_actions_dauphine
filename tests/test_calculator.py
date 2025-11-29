@@ -2,7 +2,6 @@
 
 import pytest
 from mathutils import calculator
-import sys
 
 
 def test_add():
