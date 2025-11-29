@@ -32,13 +32,13 @@ jobs:
           pip install -r requirements-dev.txt
 
       - name: Check formatting with black
-        run: black --check ../mathutils
+        run: black --check ../../mathutils
 
       - name: Check imports order with isort
-        run: isort --check ../mathutils
+        run: isort --check ../../mathutils
 
       - name: Lint with flake8
-        run: flake8 ../mathutils
+        run: flake8 ../../mathutils
 
       - name: Run tests with coverage
         run: pytest --cov=mathutils. --cov-fail-under=80
